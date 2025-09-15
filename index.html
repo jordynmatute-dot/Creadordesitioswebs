@@ -3,104 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Nombre - Desarrollo Web Profesional</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Jordy Matute | Desarrollo Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-    body { line-height:1.6; color:#333; background:#f7f7f7; }
-    a { text-decoration:none; color:inherit; }
-    section { padding:100px 20px; position: relative; }
-    .container { max-width: 1200px; margin:0 auto; }
-    h2 { text-align:center; font-size:2.5rem; color:#0A2342; margin-bottom:50px; font-weight:700; }
-    header { background:#0A2342; color:#fff; padding:20px 0; position:fixed; width:100%; top:0; z-index:999; transition:0.3s; }
-    header.scrolled { background:#081f34; box-shadow:0 5px 20px rgba(0,0,0,0.2); }
-    header .container { display:flex; justify-content:space-between; align-items:center; }
-    header h1 { font-size:1.8rem; font-weight:700; }
-    nav a { margin-left:25px; font-weight:600; transition:0.3s; }
-    nav a:hover { color:#FFA500; }
-    .hero { background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fG9mZmljZSUyMHdvcmt8ZW58MHx8fHwxNjkxMjU2MjQ4&ixlib=rb-4.0.3&q=80&w=1080') center/cover no-repeat; color:#fff; text-align:center; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; }
-    .hero h1 { font-size:3.5rem; margin-bottom:20px; opacity:0; transform:translateY(50px); animation:fadeUp 1s forwards 0.3s; }
-    .hero p { font-size:1.3rem; margin-bottom:30px; opacity:0; transform:translateY(50px); animation:fadeUp 1s forwards 0.6s; }
-    .hero a { background:#FFA500; padding:15px 35px; color:#fff; font-weight:700; border-radius:5px; transition:0.3s; opacity:0; transform:translateY(50px); animation:fadeUp 1s forwards 0.9s; }
-    .hero a:hover { background:#e69500; }
-    @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
-    .services { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .service-card { background:#fff; padding:35px; border-radius:15px; flex:1 1 250px; max-width:300px; text-align:center; transition:0.5s; box-shadow:0 10px 25px rgba(0,0,0,0.05); opacity:0; transform:translateY(50px); }
-    .service-card:hover { transform:translateY(-10px); box-shadow:0 15px 30px rgba(0,0,0,0.1); }
-    .service-card h3 { margin-bottom:15px; color:#0A2342; font-size:1.5rem; }
-    .service-card p { font-size:1rem; color:#555; }
-    .portfolio { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
-    .portfolio img { width:100%; border-radius:15px; transition:0.5s; }
-    .portfolio img:hover { transform:scale(1.05); filter:brightness(1.1); }
-    .testimonials { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
-    .testimonial { background:#fff; padding:30px; border-radius:15px; max-width:500px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.05); opacity:0; transform:translateY(50px); }
-    .testimonial p { font-style:italic; margin-bottom:10px; color:#555; }
-    .testimonial strong { color:#0A2342; }
-    .about { display:flex; flex-wrap:wrap; gap:50px; align-items:center; justify-content:center; }
-    .about img { max-width:400px; border-radius:15px; opacity:0; transform:translateX(-50px); }
-    .about div { max-width:600px; opacity:0; transform:translateX(50px); }
-    .contact form { max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:20px; }
-    .contact input, .contact textarea { padding:15px; border:1px solid #ccc; border-radius:8px; font-size:1rem; width:100%; transition:0.3s; }
-    .contact input:focus, .contact textarea:focus { border-color:#FFA500; outline:none; }
-    .contact button { padding:15px; background:#0A2342; color:#fff; border:none; border-radius:8px; font-weight:700; cursor:pointer; transition:0.3s; }
-    .contact button:hover { background:#FFA500; color:#0A2342; }
-    footer { background:#0A2342; color:#fff; text-align:center; padding:30px 0; }
-    .show { opacity:1 !important; transform:translateY(0) !important; transform:translateX(0) !important; transition:1s; }
-    /* Botón flotante WhatsApp */
-    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px; border-radius:50px; font-weight:700; font-size:1rem; z-index:1000; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,0.3); transition:0.3s; }
-    .whatsapp:hover { background:#1ebe5b; }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 0;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #1e3c72;
+    }
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #1e3c72;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #16335f;
+    }
+    .whatsapp {
+      display: block;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .whatsapp a {
+      background: #25D366;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+    }
+    .whatsapp a i {
+      margin-right: 10px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
-
-  <header id="header">
-    <div class="container">
-      <h1>Tu Nombre</h1>
-      <nav>
-        <a href="#home">Inicio</a>
-        <a href="#services">Servicios</a>
-        <a href="#portfolio">Portafolio</a>
-        <a href="#testimonials">Testimonios</a>
-        <a href="#about">Acerca de</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Jordy Matute</h1>
+    <p>Desarrollador Web | Creación de Sitios Modernos y Funcionales</p>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Creamos sitios web que impulsan tu negocio</h1>
-    <p>Diseños modernos, funcionales y adaptados a tus clientes</p>
-    <a href="#contact">Solicita tu proyecto</a>
-  </section>
+  <nav>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <section id="services">
-    <h2>Servicios</h2>
-    <div class="container services">
-      <div class="service-card"> <h3>Web Corporativa</h3> <p>Diseños profesionales para empresas que necesitan presencia digital sólida.</p> </div>
-      <div class="service-card"> <h3>E-commerce</h3> <p>Tiendas online optimizadas para vender más y mejorar la experiencia del usuario.</p> </div>
-      <div class="service-card"> <h3>Landing Pages</h3> <p>Páginas estratégicas para campañas de marketing y captación de clientes.</p> </div>
-      <div class="service-card"> <h3>Mantenimiento Web</h3> <p>Actualización, optimización y seguridad para tu sitio web.</p> </div>
+  <div class="container">
+    <section id="sobre" class="section">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Jordy Matute, un apasionado del desarrollo web. Me especializo en crear páginas modernas, funcionales y atractivas para negocios y proyectos personales.</p>
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Desarrollo Web">
+    </section>
+
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <p>Ofrezco servicios de diseño y desarrollo web adaptados a las necesidades de cada cliente:</p>
+      <ul>
+        <li>Diseño de landing pages modernas</li>
+        <li>Integración de formularios y WhatsApp</li>
+        <li>Optimización para móviles y SEO</li>
+        <li>Asesoría en presencia digital</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="Servicios Web">
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/mnnbypve" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/593959135774" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contáctame por WhatsApp
+      </a>
     </div>
-  </section>
+  </div>
 
-  <section id="portfolio">
-    <h2>Portafolio</h2>
-    <div class="container portfolio">
-      <img src="https://via.placeholder.com/400x250.png?text=Proyecto+1" alt="Proyecto 1">
-      <img src="https://via.placeholder.com/400x250.png?text=Proyecto+2" alt="Proyecto 2">
-      <img src="https://via.placeholder.com/400x250.png?text=Proyecto+3" alt="Proyecto 3">
-      <img src="https://via.placeholder.com/400x250.png?text=Proyecto+4" alt="Proyecto 4">
-    </div>
-  </section>
+  <footer>
+    <p>&copy; 2025 Jordy Matute | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
 
-  <section id="testimonials">
-    <h2>Testimonios</h2>
-    <div class="container testimonials">
-      <div class="testimonial"> <p>"Gracias a Tu Nombre, nuestra web corporativa ha crecido en visibilidad y ventas."</p> <strong>- Cliente Empresarial</strong> </div>
-      <div class="testimonial"> <p>"Profesional, rápido y atento a todos los detalles de nuestro proyecto."</p> <strong>- CEO Startup</strong> </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>Acerca de mí</
